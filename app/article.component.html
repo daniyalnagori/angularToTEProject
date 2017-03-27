@@ -1,0 +1,28 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-5" style="background-color:white;margin-top:4px;margin-left:20px;border:1px solid silver" *ngFor="let a of course;let i = index">
+     <img src="images/remove.jpg" style="margin-left:124px" height="10px" (click)="deleteItem(i);">
+        
+        <div style="margin-left:0px;height:230px;width:100px">
+            <img src="images/teamofteams.png" width="70px" height="70px" style="margin-left:30px">
+            <h4 style="margin-top:25px;margin-left:40px;color:blue">{{a.name}}</h4>
+            <div>
+          <div class="col-sm-3">  <img src="images/location.jpg" width="30px" height="30" style="margin-left:10px"></div>
+<div class="col-sm-3" style="margin-left:10px">{{a.price}}</div>
+</div>
+<div class="col-sm-4" style="margin-top:20px">
+   <img src="images/profile.png" style="width:40px;height:40px;">
+  </div>   
+  <div class="col-sm-2" style="margin-top:20px; margin-left:4px">
+      {{a.tel}}
+  </div>
+
+        </div>
+        
+    </div>
+ 
+
+
+  </div>
+  </div>
